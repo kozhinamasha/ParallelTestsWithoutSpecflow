@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="3" result="Failed" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.9.0.0" clr-version="4.0.30319.42000" start-time="2019-03-19 10:13:07Z" end-time="2019-03-19 10:13:33Z" duration="25.935642">
+  <command-line><![CDATA["C:\Users\mariia.kozhyna\source\repos\ParallelTests\packages\NUnit.ConsoleRunner.3.9.0\tools\nunit3-console.exe" C:\Users\mariia.kozhyna\source\repos\ParallelTests\ParallelTests\bin\Debug\ParallelTests.dll]]></command-line>
+  <test-suite type="Assembly" id="0-1006" name="ParallelTests.dll" fullname="ParallelTests.dll" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2019-03-19 10:13:08Z" end-time="2019-03-19 10:13:33Z" duration="25.078727" total="3" passed="2" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+    <environment framework-version="3.11.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.17134.0" platform="Win32NT" cwd="C:\Users\mariia.kozhyna\source\repos\ParallelTests\packages\NUnit.ConsoleRunner.3.9.0\tools" machine-name="KBP1-LHP-F87043" user="mariia.kozhyna" user-domain="SYNAPSE" culture="en-US" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\mariia.kozhyna\source\repos\ParallelTests\packages\NUnit.ConsoleRunner.3.9.0\tools" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.6.1" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="8" />
+    </settings>
+    <properties>
+      <property name="_PID" value="24184" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="0-1007" name="ParallelTests" fullname="ParallelTests" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2019-03-19 10:13:08Z" end-time="2019-03-19 10:13:33Z" duration="25.056981" total="3" passed="2" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="0-1004" name="SeleniumGrid" fullname="ParallelTests.SeleniumGrid" classname="ParallelTests.SeleniumGrid" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2019-03-19 10:13:08Z" end-time="2019-03-19 10:13:09Z" duration="0.729898" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <properties>
+          <property name="ParallelScope" value="Self" />
+        </properties>
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="0-1005" name="RemoteTest" fullname="ParallelTests.SeleniumGrid.RemoteTest" methodname="RemoteTest" classname="ParallelTests.SeleniumGrid" runstate="Runnable" seed="1021716089" result="Failed" label="Error" start-time="2019-03-19 10:13:08Z" end-time="2019-03-19 10:13:09Z" duration="0.714972" asserts="0">
+          <failure>
+            <message><![CDATA[System.InvalidOperationException : Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'KBP1-LHP-F87043', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: driver.version: unknown (SessionNotCreated)]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(Uri remoteAddress, ICapabilities desiredCapabilities)
+   at ParallelTests.Hooks.ChooseBrowser(BrowserType browserType) in C:\Users\mariia.kozhyna\source\repos\ParallelTests\ParallelTests\Hooks.cs:line 45
+   at ParallelTests.Hooks.InitialBrowser() in C:\Users\mariia.kozhyna\source\repos\ParallelTests\ParallelTests\Hooks.cs:line 29]]></stack-trace>
+          </failure>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="0-1000" name="ChromeBrowser" fullname="ParallelTests.ChromeBrowser" classname="ParallelTests.ChromeBrowser" runstate="Runnable" testcasecount="1" result="Passed" start-time="2019-03-19 10:13:08Z" end-time="2019-03-19 10:13:21Z" duration="12.461658" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <properties>
+          <property name="ParallelScope" value="Self" />
+        </properties>
+        <test-case id="0-1001" name="ChromeTest" fullname="ParallelTests.ChromeBrowser.ChromeTest" methodname="ChromeTest" classname="ParallelTests.ChromeBrowser" runstate="Runnable" seed="83772308" result="Passed" start-time="2019-03-19 10:13:08Z" end-time="2019-03-19 10:13:21Z" duration="12.454249" asserts="0" />
+      </test-suite>
+      <test-suite type="TestFixture" id="0-1002" name="FirefoxBrowser" fullname="ParallelTests.FirefoxBrowser" classname="ParallelTests.FirefoxBrowser" runstate="Runnable" testcasecount="1" result="Passed" start-time="2019-03-19 10:13:08Z" end-time="2019-03-19 10:13:33Z" duration="25.052261" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <properties>
+          <property name="ParallelScope" value="Self" />
+        </properties>
+        <test-case id="0-1003" name="FirefoxTest" fullname="ParallelTests.FirefoxBrowser.FirefoxTest" methodname="FirefoxTest" classname="ParallelTests.FirefoxBrowser" runstate="Runnable" seed="1814299597" result="Passed" start-time="2019-03-19 10:13:08Z" end-time="2019-03-19 10:13:33Z" duration="25.044988" asserts="0" />
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
