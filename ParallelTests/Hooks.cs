@@ -42,7 +42,7 @@ namespace ParallelTests
             else if (browserType == BrowserType.RemoteDriver)
             {
                 ChromeOptions options = new ChromeOptions();
-                Driver = new RemoteWebDriver(new Uri("http://localhost:4445/wd/hub"), options);
+                Driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"), options);
             }
         }
 
